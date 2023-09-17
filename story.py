@@ -11,7 +11,7 @@ def story(text):
 """
     prompt = PromptTemplate(template=template, input_variables=["text"])
     llm_model = LLMChain(llm=OpenAI(model_name="gpt-3.5-turbo",
-                         temperature=1, openai_api_key="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"), prompt=prompt, verbose=True)
+                         temperature=1, openai_api_key="API_key"), prompt=prompt, verbose=True)
     scene = llm_model.predict(text=text)
     return scene
 
