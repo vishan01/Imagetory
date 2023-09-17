@@ -5,7 +5,7 @@ def story(text, api):
     template = """
     You are story teller.
     You can narrate a story from the given context. The story shouldn't be more than 60 words. 
-    The story should be interesting and heart warming.
+    The story should be interesting and heart warming or emotional or joyful.
     CONTEXT: {text}
     STORY:
 """
