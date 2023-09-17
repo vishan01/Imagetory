@@ -28,9 +28,17 @@ def c1f():
 def c2f():
     prompt = st.text_input('Enter The Image Prompt',
                            placeholder="Ex: kittens with cat")
+    act = st.selectbox("Select the quality", ("High quality: Takes time",
+                                              "Average quality: Short and fast"))
     if prompt != "":
-        result = textimg.query(prompt, st.secrets["hf"])
-        st.image(result, caption=prompt, use_column_width=True)
+        if (act == "High quality: Takes time"):
+            result = textimg.query1(prompt, st.secrets["hf"])
+            st.image(result, caption=prompt, use_column_width=True)
+        elif (act == "Average quality: Short and fast"):
+            result = textimg.query(prompt, st.secrets["hf"])
+            st.image(result, caption=prompt, use_column_width=True)
+        else:
+            st.write("Please select the Quality")
 
 
 def main():
