@@ -8,7 +8,7 @@ def query(payload):
 image_bytes = query({
 	"inputs": 'tiger as astronutetus, illustration by tim burton' ,
 })
-# You can access the image with PIL.Image for example
+
 import io
 from PIL import Image
 image = Image.open(io.BytesIO(image_bytes))
