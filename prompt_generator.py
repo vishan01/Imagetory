@@ -12,7 +12,7 @@ Original file is located at
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/succinctly/text2image-prompt-generator"
-headers = {"Authorization": f"Bearer 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"}
+headers = {"Authorization": f"Bearer {API KEY}"}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
