@@ -1,6 +1,6 @@
-# ReImage Streamlit Hugging Face LLM Application
+# Imagetory Streamlit Hugging Face LLM Application
 
-ReImage is a Streamlit-based Language Model (LLM) application powered by Hugging Face Transformers that allows users to generate Image. With ReImage, you can easily create images from the text you provide.
+Imagetory is a Streamlit-based Language Model (LLM) application powered by Hugging Face Transformers that allows users to generate Image and Story. With ReImage, you can easily create images from the text you provide.
 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -13,7 +13,7 @@ ReImage is a Streamlit-based Language Model (LLM) application powered by Hugging
 
 ## Getting Started
 
-Follow the steps below to set up and run the ReImage Streamlit Hugging Face LLM Application on your local machine.
+Follow the steps below to set up and run the Imagetory Streamlit Hugging Face LLM Application on your local machine.
 
 ### Prerequisites
 
@@ -27,7 +27,7 @@ Before you begin, make sure you have the following dependencies installed:
 1. Clone the ReImage repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/reimage.git
+   git clone https://github.com/vishan01/Imagetory.git
    ```
 
 2. Navigate to the project directory:
@@ -62,11 +62,11 @@ Before you begin, make sure you have the following dependencies installed:
 streamlit run app.py
 ```
 
-This will launch the ReImage application in your default web browser. You can then interact with the application and start generating text using the specified Hugging Face Transformers model.
+This will launch the Imagetory application in your default web browser. You can then interact with the application and start generating text using the specified Hugging Face Transformers model.
 
 ## Contributing
 
-We welcome contributions to the ReImage project. If you want to contribute to this project, please follow these steps:
+We welcome contributions to the Imagetory project. If you want to contribute to this project, please follow these steps:
 
 1. Fork the repository on GitHub.
 2. Clone your fork to your local machine.
