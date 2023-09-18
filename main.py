@@ -26,7 +26,7 @@ def c1f():
         st.audio("audio.mp3")
 
 
-@st.cache_data
+@st.cache_data(experimental_allow_widgets=True)
 def c2f():
     prompt = st.text_input('Enter The Image Prompt',
                            placeholder="Ex: kittens with cat")
