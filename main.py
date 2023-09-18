@@ -26,7 +26,6 @@ def c1f():
         st.audio("audio.mp3")
 
 
-@st.cache_data(experimental_allow_widgets=True)
 def c2f():
     prompt = st.text_input('Enter The Image Prompt',
                            placeholder="Ex: kittens with cat")
@@ -69,5 +68,4 @@ def main():
 
 if __name__ == '__main__':
     st.cache_data.clear()
-    c2f.clear()
     main()

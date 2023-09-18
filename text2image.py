@@ -1,4 +1,7 @@
 import requests
+import streamlit as st
+
+st.cache_data.clear()
 
 
 def query(payload, api):
