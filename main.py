@@ -31,8 +31,10 @@ def c2f():
                            placeholder="Ex: kittens with cat")
     act = st.selectbox("Select the quality", ("High quality: Takes time",
                                               "Average quality: Short and fast"))
-    if prompt != "":
+    pt = st.selectbox("Do you want Dynamic Prompt", ("No", "Yes"))
+    if (pt == "Yes"):
         prompt = pg.query(prompt, st.secrets["hf"])
+    if prompt != "":
         if (act == "High quality: Takes time"):
             result = textimg.query1(prompt, st.secrets["hf"])
             if (result.status_code == 200):
