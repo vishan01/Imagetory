@@ -40,7 +40,7 @@ def c2f():
                     "# Sorry the server is currently busy😔 please try after some time")
         elif (act == "Average quality: Short and fast"):
             result = textimg.query(prompt, st.secrets["hf"])
-            st.image(result.content, caption=prompt, use_column_width=True)
+            st.image(result, caption=prompt, use_column_width=True)
 
         else:
             st.write("Please select the Quality")
