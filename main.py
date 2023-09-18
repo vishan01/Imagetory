@@ -64,10 +64,10 @@ def main():
     if (option == 'IMAGE TO STORY ✔️'):
         c1f()
     if (option == 'TEXT TO IMAGE ✔️'):
-        c2f.clear()
         c2f()
 
 
 if __name__ == '__main__':
     st.cache_data.clear()
+    c2f.clear()
     main()
