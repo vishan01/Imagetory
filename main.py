@@ -51,6 +51,7 @@ def c2f():
 
 
 def main():
+    st.cache_data.clear()
     st.set_page_config(page_title="Imagetory", page_icon="🖥️")
     st.title(":orange[Imagetory]📷: The story of an image")
     st.markdown(
