@@ -6,7 +6,7 @@ import requests
 
 
 def query(payload, api):
-    API_URL = "https://api-inference.huggingface.co/models/succinctly/text2image-prompt-generator"
+    API_URL = "https://api-inference.huggingface.co/models/Ar4ikov/gpt2-650k-stable-diffusion-prompt-generator"
     headers = {"Authorization": f"Bearer {api}"}
     payload1 = dict(inputs=payload)
     response = requests.post(API_URL, headers=headers, json=payload1)

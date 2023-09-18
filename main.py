@@ -3,6 +3,7 @@ import imgtext
 import story
 import text2image as textimg
 import storyvoice as sv
+import prompt_generator as pg
 
 
 def c1f():
@@ -31,6 +32,7 @@ def c2f():
     act = st.selectbox("Select the quality", ("High quality: Takes time",
                                               "Average quality: Short and fast"))
     if prompt != "":
+        prompt = pg.query(prompt, st.secrets["hf"])
         if (act == "High quality: Takes time"):
             result = textimg.query1(prompt, st.secrets["hf"])
             if (result.status_code == 200):
