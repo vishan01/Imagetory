@@ -33,14 +33,15 @@ def c2f():
     if prompt != "":
         if (act == "High quality: Takes time"):
             result = textimg.query1(prompt, st.secrets["hf"])
-            st.image(result, caption=prompt, use_column_width=True)
-        elif (act == "Average quality: Short and fast"):
-            result = textimg.query(prompt, st.secrets["hf"])
             if (result.status_code == 200):
                 st.image(result.content, caption=prompt, use_column_width=True)
             else:
                 st.markdown(
                     "# Sorry the server is currently busy😔 please try after some time")
+        elif (act == "Average quality: Short and fast"):
+            result = textimg.query(prompt, st.secrets["hf"])
+            st.image(result.content, caption=prompt, use_column_width=True)
+
         else:
             st.write("Please select the Quality")
 
