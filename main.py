@@ -26,6 +26,7 @@ def c1f():
         st.audio("audio.mp3")
 
 
+@st.cache_data
 def c2f():
     prompt = st.text_input('Enter The Image Prompt',
                            placeholder="Ex: kittens with cat")
@@ -51,7 +52,6 @@ def c2f():
 
 
 def main():
-    st.cache_data.clear()
     st.set_page_config(page_title="Imagetory", page_icon="🖥️")
     st.title(":orange[Imagetory]📷: The story of an image")
     st.markdown(
@@ -64,8 +64,10 @@ def main():
     if (option == 'IMAGE TO STORY ✔️'):
         c1f()
     if (option == 'TEXT TO IMAGE ✔️'):
+        c2f.clear()
         c2f()
 
 
 if __name__ == '__main__':
+    st.cache_data.clear()
     main()
