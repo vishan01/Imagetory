@@ -14,4 +14,4 @@ def query1(payload, api):
     headers = {"Authorization": f"Bearer {api}"}
     payload1 = dict(inputs=payload)
     response = requests.post(API_URL, headers=headers, json=payload1,)
-    return response.content
+    return response
