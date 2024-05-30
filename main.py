@@ -16,7 +16,7 @@ def c1f():
                  use_column_width=True)
 
         Description = imgtext.query(uploaded_file.name, st.secrets["hf"])
-        Story = story.story(Description, st.secrets["openai"])
+        Story = story.story(Description, st.secrets["gemini"])
         sv.query(Story, st.secrets["hf"])
 
         with st.expander("Description"):

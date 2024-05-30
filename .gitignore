@@ -2,3 +2,5 @@ venv/
 .gitattributes
 api.py
 __pycache__
+secrets.toml
+.venv
